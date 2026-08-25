@@ -21,8 +21,6 @@
 </p>
 
 <p align="center">
-  <a href="#">▶ Watch the walkthrough</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="vault-template/">The template</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="docs/">The guides</a>
@@ -97,7 +95,9 @@ cd ~/MyBrain
 claude          # it reads CLAUDE.md on the way in and knows the filing rules
 ```
 
-That is the whole install. Everything below is convention, and you can change all of it.
+That is the whole install. Claude Code reads `CLAUDE.md` on the way in, so it starts already knowing
+where things go and how notes are written. You do not have to explain the system to it. Everything
+below is convention, and you can change all of it.
 
 **First five minutes inside the vault:** open `_meta/VAULT.md`, put your own project in the one line
 that asks for it, then open `_meta/MOC.md` and do the same. Those two files are what an agent reads
