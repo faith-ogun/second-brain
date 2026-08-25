@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1120" viewBox="0 0 1900 1120" font-family="Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5B6480"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2B2BE0"/>
+    </marker>
+  </defs>
+  <rect width="1900" height="1120" fill="#FFFFFF"/>
+
+  <!-- ===== BAND 1: THE LOOP ===== -->
+  <text x="70" y="72" font-size="24" font-weight="bold" fill="#2B2BE0" letter-spacing="3">THE LOOP</text>
+  <text x="70" y="104" font-size="21" fill="#5B6480">one pass, and it always ends with you</text>
+
+  <g>
+    <rect x="70"   y="140" width="300" height="120" rx="14" fill="#F3F5FC" stroke="#2B2BE0" stroke-width="2"/>
+    <text x="220" y="182" font-size="25" font-weight="bold" fill="#151A3A" text-anchor="middle">1 · Trigger</text>
+    <text x="220" y="214" font-size="19" fill="#5B6480" text-anchor="middle">a paper, a meeting,</text>
+    <text x="220" y="238" font-size="19" fill="#5B6480" text-anchor="middle">a result, an idea</text>
+
+    <rect x="440"  y="140" width="300" height="120" rx="14" fill="#F3F5FC" stroke="#2B2BE0" stroke-width="2"/>
+    <text x="590" y="182" font-size="25" font-weight="bold" fill="#151A3A" text-anchor="middle">2 · Retrieve</text>
+    <text x="590" y="214" font-size="19" fill="#5B6480" text-anchor="middle">agent reads the rules</text>
+    <text x="590" y="238" font-size="19" fill="#5B6480" text-anchor="middle">and the prior notes</text>
+
+    <rect x="810"  y="140" width="300" height="120" rx="14" fill="#F3F5FC" stroke="#2B2BE0" stroke-width="2"/>
+    <text x="960" y="182" font-size="25" font-weight="bold" fill="#151A3A" text-anchor="middle">3 · Work</text>
+    <text x="960" y="214" font-size="19" fill="#5B6480" text-anchor="middle">digest, draft, analyse,</text>
+    <text x="960" y="238" font-size="19" fill="#5B6480" text-anchor="middle">summarise</text>
+
+    <rect x="1180" y="140" width="300" height="120" rx="14" fill="#F3F5FC" stroke="#2B2BE0" stroke-width="2"/>
+    <text x="1330" y="182" font-size="25" font-weight="bold" fill="#151A3A" text-anchor="middle">4 · File + link</text>
+    <text x="1330" y="214" font-size="19" fill="#5B6480" text-anchor="middle">right folder, real title,</text>
+    <text x="1330" y="238" font-size="19" fill="#5B6480" text-anchor="middle">frontmatter, [[links]]</text>
+
+    <rect x="1550" y="140" width="280" height="120" rx="14" fill="#2B2BE0" stroke="#2B2BE0" stroke-width="2"/>
+    <text x="1690" y="182" font-size="25" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5 · You</text>
+    <text x="1690" y="214" font-size="19" fill="#D8DEFB" text-anchor="middle">approve or send back.</text>
+    <text x="1690" y="238" font-size="19" fill="#D8DEFB" text-anchor="middle">the stop condition</text>
+
+    <line x1="378" y1="200" x2="432" y2="200" stroke="#5B6480" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="748" y1="200" x2="802" y2="200" stroke="#5B6480" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="1118" y1="200" x2="1172" y2="200" stroke="#5B6480" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="1488" y1="200" x2="1542" y2="200" stroke="#5B6480" stroke-width="3" marker-end="url(#a)"/>
+  </g>
+
+  <!-- return arrow -->
+  <path d="M1690,268 L1690,318 L220,318 L220,272" fill="none" stroke="#7A93F5" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#a)"/>
+  <text x="955" y="345" font-size="19" fill="#7A93F5" text-anchor="middle" font-style="italic">approved work becomes the next trigger</text>
+
+  <!-- read / write arrows -->
+  <line x1="590" y1="268" x2="590" y2="452" stroke="#2B2BE0" stroke-width="3.5" marker-end="url(#ab)"/>
+  <text x="612" y="378" font-size="20" font-weight="bold" fill="#2B2BE0">reads</text>
+  <line x1="1330" y1="452" x2="1330" y2="272" stroke="#2B2BE0" stroke-width="3.5" marker-start="url(#ab)"/>
+  <text x="1352" y="378" font-size="20" font-weight="bold" fill="#2B2BE0">writes</text>
+
+  <!-- ===== BAND 2: THE VAULT ===== -->
+  <rect x="70" y="452" width="1760" height="392" rx="18" fill="#FFFFFF" stroke="#151A3A" stroke-width="2.5"/>
+  <text x="102" y="506" font-size="24" font-weight="bold" fill="#151A3A" letter-spacing="3">THE VAULT</text>
+  <text x="102" y="538" font-size="21" fill="#5B6480">plain markdown folders on your own disk. this is the memory.</text>
+
+  <!-- procedural -->
+  <rect x="102" y="566" width="540" height="246" rx="14" fill="#F3F5FC" stroke="#7A93F5" stroke-width="2"/>
+  <text x="130" y="606" font-size="22" font-weight="bold" fill="#2B2BE0">PROCEDURAL</text>
+  <text x="130" y="634" font-size="19" fill="#5B6480">how the agent should behave</text>
+  <text x="130" y="676" font-size="20" fill="#151A3A" font-family="Menlo,monospace">CLAUDE.md</text>
+  <text x="130" y="708" font-size="20" fill="#151A3A" font-family="Menlo,monospace">_meta/VAULT.md</text>
+  <text x="130" y="740" font-size="20" fill="#151A3A" font-family="Menlo,monospace">_meta/*-conventions.md</text>
+  <text x="130" y="772" font-size="20" fill="#151A3A" font-family="Menlo,monospace">99_Templates/</text>
+
+  <!-- semantic -->
+  <rect x="672" y="566" width="540" height="246" rx="14" fill="#F3F5FC" stroke="#7A93F5" stroke-width="2"/>
+  <text x="700" y="606" font-size="22" font-weight="bold" fill="#2B2BE0">SEMANTIC</text>
+  <text x="700" y="634" font-size="19" fill="#5B6480">durable facts, one note per thing</text>
+  <text x="700" y="676" font-size="20" fill="#151A3A" font-family="Menlo,monospace">10_Research/  20_Literature/</text>
+  <text x="700" y="708" font-size="20" fill="#151A3A" font-family="Menlo,monospace">30_Grants/    40_Outreach/</text>
+  <text x="700" y="740" font-size="20" fill="#151A3A" font-family="Menlo,monospace">50_Side/      people/</text>
+  <text x="700" y="778" font-size="18" fill="#5B6480" font-style="italic">renamed freely; links follow</text>
+
+  <!-- episodic -->
+  <rect x="1242" y="566" width="546" height="246" rx="14" fill="#F3F5FC" stroke="#7A93F5" stroke-width="2"/>
+  <text x="1270" y="606" font-size="22" font-weight="bold" fill="#2B2BE0">EPISODIC</text>
+  <text x="1270" y="634" font-size="19" fill="#5B6480">what happened, and when</text>
+  <text x="1270" y="676" font-size="20" fill="#151A3A" font-family="Menlo,monospace">90_Daily/</text>
+  <text x="1270" y="708" font-size="20" fill="#151A3A" font-family="Menlo,monospace">00_Inbox/</text>
+  <text x="1270" y="748" font-size="18" fill="#5B6480" font-style="italic">the lab notebook. dated,</text>
+  <text x="1270" y="772" font-size="18" fill="#5B6480" font-style="italic">append-only, never tidied away</text>
+
+  <!-- ===== BAND 3: THE SPINE ===== -->
+  <rect x="70" y="884" width="1760" height="164" rx="18" fill="#151A3A"/>
+  <text x="102" y="936" font-size="24" font-weight="bold" fill="#7A93F5" letter-spacing="3">THE SPINE</text>
+  <text x="102" y="978" font-size="26" fill="#FFFFFF">Every note ends in a <tspan font-family="Menlo,monospace" fill="#9FB4F8">## Related</tspan> block of <tspan font-family="Menlo,monospace" fill="#9FB4F8">[[wikilinks]]</tspan>. Maps of Content in <tspan font-family="Menlo,monospace" fill="#9FB4F8">_meta/</tspan> gather each room.</text>
+  <text x="102" y="1016" font-size="26" font-style="italic" fill="#9FB4F8">Folders keep things tidy. Links do the thinking.</text>
+</svg>

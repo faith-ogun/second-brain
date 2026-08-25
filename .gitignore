@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+.obsidian/workspace*.json
+
+# personal working material, not part of the repo
+demo-script.md
