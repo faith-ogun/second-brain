@@ -7,12 +7,13 @@
 <p align="center"><i>the model is the horse. this is the harness.</i></p>
 
 <p align="center">
-  A plain-markdown research brain that an AI agent can actually <b>read, write to, and find its way</b><br>
-  around. No database, no plugins to buy, no service to sign up to. Folders on your own disk.
+  A plain-markdown brain that an AI agent can actually <b>read, write to, and find its way</b> around.<br>
+  For a PhD, a startup, or the project you start this weekend. No database, no plugins to buy,<br>
+  no service to sign up to. Folders on your own disk.
 </p>
 
 <p align="center">
-  Built and run daily as <b>PhD Brain</b> &nbsp;·&nbsp; 317 notes &nbsp;·&nbsp; Obsidian + Claude Code
+  Run daily across a PhD, a startup and every hackathon build &nbsp;·&nbsp; Obsidian + Claude Code
 </p>
 
 <p align="center">
@@ -47,7 +48,8 @@ This is the other fix. You give the model a **place to remember**: a folder of m
 organised so that an agent can work out where anything belongs without being told, and a small set
 of written rules that say how to behave. That folder is the harness. The model is the horse.
 
-The important part is that **none of it is clever**. There is no vector database, no embedding
+I start one the day a project starts, whatever the project is. The important part is that **none of
+it is clever**. There is no vector database, no embedding
 pipeline, no RAG service. It is directories and text files, which means you can read it, grep it,
 back it up, and still open it in ten years. The intelligence lives in the *conventions*, not the
 infrastructure.
@@ -105,8 +107,9 @@ first, so they are the only ones that must be true on day one.
 
 ## The rooms
 
-Numbered so they sort themselves. The numbers have gaps on purpose, so you can add a room later
-without renumbering anything.
+One instantiation, for research. Numbered so they sort themselves, with gaps on purpose so you can
+add a room later without renumbering anything. For what these look like on a product build, see
+[the vault is a pattern](#the-vault-is-a-pattern-not-a-folder-name).
 
 | Folder | What goes in it |
 |---|---|
@@ -191,15 +194,55 @@ If you skip this, the vault silently becomes a junk drawer, and no amount of too
 
 ---
 
+## The vault is a pattern, not a folder name
+
+The rooms in the template are one instantiation. The pattern is what transfers, and it renames
+cleanly for whatever you are doing.
+
+I start a vault the day a project starts, before there is any code, because the decisions worth
+keeping are made in the first hour and they are the ones nobody writes down. On a research project
+the rooms look like the template. On a product build they look nothing like it, and it is still the
+same three memories underneath:
+
+| | Research vault | Product or startup build |
+|---|---|---|
+| **Procedural** | `CLAUDE.md` · `_meta/` · `99_Templates/` | `CLAUDE.md` · `AGENTS.md` · `_templates/` |
+| **Semantic** | `10_Research/` `20_Literature/` `people/` | `decisions/` `architecture/` `brand/` `competitors/` `customers/` `compliance/` |
+| **Episodic** | `90_Daily/` | `logs/` one file per iteration |
+
+The folder holding it all does not even have to be called anything sensible. In my own projects it
+has ended up as `metadata/`, `docs/` and once, unhelpfully, `assets/`. It works anyway, because the
+agent is told where to look in one line of `CLAUDE.md`, and nothing else depends on the name.
+
+**The one convention I would steal from the product side:** name episodic files
+`YYYY-MM-DD-iter-NNN-what-changed.md`. Dated so they sort, numbered so you can refer to one out
+loud, and named so you can find the right one without opening any of them. Six months later that
+folder is the only honest account of why the thing is built the way it is.
+
+---
+
 ## What it is good for
 
-Real jobs this has done, so you can judge whether it would earn its keep for you:
+Real jobs this has done, so you can judge whether it would earn its keep:
 
-- **Grant writing.** Every claim in a draft can be traced back to the note and the paper behind it, because the link is already there.
-- **Supervisor meetings.** The agent reads the last six months of daily notes and drafts the update.
-- **Coming back after time away.** Two weeks off, and the honest answer to "where was I" is in the vault rather than in my head.
-- **Annual reports and reviews.** The evidence for what you did all year is already written; it just needs assembling.
-- **Not losing things.** The single biggest win, and the least impressive to demo.
+- **Starting anything new.** Day one, before the first file of code. The agent has somewhere to put
+  decisions from the first hour instead of losing them in a chat window you will close.
+- **Shipping under a deadline.** Dated iteration logs mean that when you come back after two days
+  away mid-build, you get the state of play in one file rather than reconstructing it from git.
+- **Remembering why.** Six weeks later, "why did we choose this" has a written answer instead of
+  three people guessing. This is the one that quietly saves the most time.
+- **Handover.** Someone else, or a fresh agent session, can pick the project up from the vault
+  rather than from your memory. This is also what makes a new chat useful in ten seconds instead of
+  ten minutes.
+- **Writing the thing at the end.** Grant sections, reports, submissions, launch posts. Every claim
+  traces back to the note behind it, because the link is already there.
+- **Meetings and updates.** The agent reads the record and drafts the update. You correct it.
+- **Coming back after time away.** Two weeks off, and the honest answer to "where was I" is written
+  down rather than half remembered.
+- **Not losing things.** The least impressive to demo, and the biggest win by a distance.
+
+I run this for the PhD, for a startup, and for every hackathon project I start. The PhD vault is the
+oldest. It is not the largest.
 
 ---
 

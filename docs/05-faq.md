@@ -39,10 +39,20 @@ test: if you have spent more time this week improving the vault than using it, s
 work. Your moat is the work, not the workflow.
 
 **Will this work outside research?**
-Yes. The rooms are the only research-specific part, and you should rename them anyway. The
-transferable pieces are the three memories, the numbered rooms, the frontmatter contract, the
-`## Related` block, one instrumented loop, and the weekly review. A lawyer, a founder or a journalist
-would keep all of that and change every folder name.
+Yes, and honestly it is where I get the most out of it. I run the same pattern for a startup and for
+every hackathon project, and those vaults are bigger than the PhD one. The rooms change completely:
+`decisions/`, `architecture/`, `brand/`, `competitors/`, `compliance/`, and `logs/` instead of daily
+notes. What does not change is the three memories, a real title on every note, the frontmatter
+contract, the `## Related` block, one instrumented loop, and the weekly review.
+
+The move that pays off most on a build is starting the vault on **day one**, before any code, because
+the decisions worth keeping are made in the first hour and they are exactly the ones nobody writes
+down.
+
+**What do I call the folder on a code project?**
+Whatever you like. Mine have ended up as `metadata/`, `docs/` and once, unhelpfully, `assets/`.
+Nothing depends on the name because you tell the agent where to look in one line of `CLAUDE.md`. Do
+not spend time on this.
 
 **Can I use this for a team?**
 The conventions work. The mechanics need thought: put it in git, agree the tag namespace before you
