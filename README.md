@@ -17,6 +17,12 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/endpoint?style=flat-square&url=https://raw.githubusercontent.com/faith-ogun/second-brain/main/.stats/views-badge.json" alt="All-time repository views">
+  &nbsp;
+  <img src="https://img.shields.io/endpoint?style=flat-square&url=https://raw.githubusercontent.com/faith-ogun/second-brain/main/.stats/clones-badge.json" alt="All-time repository clones">
+</p>
+
+<p align="center">
   <a href="#quickstart"><b>◆ Build your own in 20 minutes&nbsp;→</b></a>
 </p>
 

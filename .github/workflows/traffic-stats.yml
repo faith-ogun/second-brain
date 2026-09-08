@@ -1,0 +1,46 @@
+name: traffic-stats
+
+# Snapshots GitHub traffic (views + clones) once a day and commits the numbers to
+# .stats/ so the README badges self-update and the history survives GitHub's 14-day
+# window. Reads traffic with a PAT (secrets.TRAFFIC_PAT); pushes with the built-in
+# token. Run it by hand any time from the Actions tab (workflow_dispatch).
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # daily at 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: traffic-stats
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Snapshot traffic
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/update_traffic.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .stats
+          if git diff --staged --quiet; then
+            echo "No traffic change today."
+          else
+            git commit -m "chore: update traffic stats [skip ci]"
+            git push
+          fi
