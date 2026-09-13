@@ -22,6 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Push with the PAT (Contents: read+write), not the built-in token, so the
+          # daily commit works even when the repo's default workflow permissions are
+          # set to read-only. persist-credentials stores it for the later git push.
+          token: ${{ secrets.TRAFFIC_PAT }}
+          persist-credentials: true
 
       - uses: actions/setup-python@v5
         with:
